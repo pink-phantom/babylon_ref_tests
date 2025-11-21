@@ -24,7 +24,7 @@ var createScene = function () {
     pbr.microSurfaceTexture = glossinessMap;
     pbr.microSurface = 1.0;
 
-    pbr.environmentTexture = BABYLON.CubeTexture.CreateFromPrefilteredData("environment.dds", scene);
+    pbr.environmentTexture = BABYLON.CubeTexture.CreateFromPrefilteredData("_textures_environment.dds", scene);
 
     return scene;
 
