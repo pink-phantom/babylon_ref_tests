@@ -14,15 +14,19 @@ var createScene = function (engine, canvas) {
 
     //const diffuseMap = new BABYLON.Texture("./test_diffuse.jpg", scene);
     //pbr.albedoTexture = diffuseMap;
-    pbr.albedoColor = new BABYLON.Color3(1.0, 1.0, 1.0);
+    //pbr.albedoColor = new BABYLON.Color3(1.0, 1.0, 1.0);
 
     //const reflectivityMap = new BABYLON.Texture("./l-gray.jpg", scene);
     //pbr.reflectivityTexture = reflectivityMap;
-    pbr.reflectivityColor = new BABYLON.Color3(1.0, 1.0, 1.0);
+    //pbr.reflectivityColor = new BABYLON.Color3(1.0, 1.0, 1.0);
     
     //const glossinessMap = new BABYLON.Texture("./gray.jpg", scene);
     //pbr.microSurfaceTexture = glossinessMap;
-    pbr.microSurface = 1.0;
+    //pbr.microSurface = 1.0;
+
+    pbr.baseColor = new BABYLON.Color3(1.0, 0.766, 0.336);
+    pbr.metallic = 1.0;
+    pbr.roughness = 0.0;
 
     pbr.environmentTexture = BABYLON.CubeTexture.CreateFromPrefilteredData("./_textures_environment.dds", scene);
 
