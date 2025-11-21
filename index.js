@@ -12,11 +12,11 @@ var createScene = function () {
     var pbr = new BABYLON.PBRSpecularGlossinessMaterial("pbr", scene);
     sphere.material = pbr;
 
-    const diffuseMap = new BABYLON.Texture("/textures/Test_diffuse.jpg", scene);
+    const diffuseMap = new BABYLON.Texture("Test_diffuse.jpg", scene);
     pbr.albedoTexture = diffuseMap;
     pbr.albedoColor = new BABYLON.Color3(1.0, 1.0, 1.0);
 
-    const new BABYLON.Texture("/textures/000.jpg", scene);
+    const new BABYLON.Texture("000.jpg", scene);
     pbr.reflectivityTexture = new BABYLON.Texture("000.jpg", scene);
     pbr.reflectivityColor = new BABYLON.Color3(1.0, 1.0, 1.0);
 
@@ -24,7 +24,7 @@ var createScene = function () {
     pbr.microSurfaceTexture = glossinessMap;
     pbr.microSurface = 1.0;
 
-    pbr.environmentTexture = BABYLON.CubeTexture.CreateFromPrefilteredData("/textures/environment.dds", scene);
+    pbr.environmentTexture = BABYLON.CubeTexture.CreateFromPrefilteredData("environment.dds", scene);
 
     return scene;
 
