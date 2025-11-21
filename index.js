@@ -27,7 +27,7 @@ var createScene = function (engine, canvas) {
     pbr.baseColor = new BABYLON.Color3(1.0, 0.766, 0.336);
     pbr.metallic = 1.0;
     pbr.roughness = 0.0;
-    pbr.environmentTexture = BABYLON.CubeTexture.CreateFromPrefilteredData("/textures/environment.dds", scene);
+    pbr.environmentTexture = BABYLON.CubeTexture.CreateFromPrefilteredData("_textures_environment.dds", scene);
 
 
     //pbr.environmentTexture = BABYLON.CubeTexture.CreateFromPrefilteredData("_textures_environment.dds", scene);
