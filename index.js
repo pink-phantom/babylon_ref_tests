@@ -12,15 +12,15 @@ var createScene = function (engine, canvas) {
     var pbr = new BABYLON.PBRSpecularGlossinessMaterial("pbr", scene);
     sphere.material = pbr;
 
-    const diffuseMap = new BABYLON.Texture("Test_diffuse.jpg", scene);
+    const diffuseMap = new BABYLON.Texture("test_diffuse.jpg", scene);
     pbr.albedoTexture = diffuseMap;
     pbr.albedoColor = new BABYLON.Color3(1.0, 1.0, 1.0);
 
-    const reflectivityMap = new BABYLON.Texture("050.jpg", scene);
+    const reflectivityMap = new BABYLON.Texture("l-gray.jpg", scene);
     pbr.reflectivityTexture = reflectivityMap;
     pbr.reflectivityColor = new BABYLON.Color3(1.0, 1.0, 1.0);
     
-    const glossinessMap = new BABYLON.Texture("100.jpg", scene);
+    const glossinessMap = new BABYLON.Texture("gray.jpg", scene);
     pbr.microSurfaceTexture = glossinessMap;
     pbr.microSurface = 1.0;
 
