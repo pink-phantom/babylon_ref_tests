@@ -19,7 +19,7 @@
         var engine = new BABYLON.Engine(canvas, true);
 
         // Run your scene creation function
-        var scene = createScene();
+        var scene = createScene(engine, canvas);
 
         // Start the rendering loop
         engine.runRenderLoop(function () {
