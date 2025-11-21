@@ -1,4 +1,4 @@
-var createScene = function () {
+var createScene = function (engine, canvas) {
     var scene = new BABYLON.Scene(engine);
     var camera = new BABYLON.ArcRotateCamera("camera1", 0, Math.PI / 2, 5, BABYLON.Vector3.Zero(), scene);
 
