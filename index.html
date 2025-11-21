@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Babylon.js Reflection Test</title>
+    <style>
+        html, body { overflow: hidden; width: 100%; height: 100%; margin: 0; padding: 0; }
+        #renderCanvas { width: 100%; height: 100%; touch-action: none; }
+    </style>
+</head>
+<body>
+    <canvas id="renderCanvas"></canvas>
+    
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+
+    <script type="module" src="index.js"></script> 
+    
+    <script type="module">
+        import createScene from './index.js'; // Import the createScene function from your index.js file
+        
+        var canvas = document.getElementById("renderCanvas");
+        var engine = new BABYLON.Engine(canvas, true);
+
+        // Run your scene creation function
+        var scene = createScene();
+
+        // Start the rendering loop
+        engine.runRenderLoop(function () {
+            scene.render();
+        });
+
+        // Handle window resizing
+        window.addEventListener("resize", function () {
+            engine.resize();
+        });
+    </script>
+</body>
+</html>
