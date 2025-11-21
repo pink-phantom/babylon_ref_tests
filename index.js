@@ -17,10 +17,10 @@ var createScene = function () {
     pbr.albedoColor = new BABYLON.Color3(1.0, 1.0, 1.0);
 
     const new BABYLON.Texture("/textures/000.jpg", scene);
-    pbr.reflectivityTexture = new BABYLON.Texture("/textures/000.jpg", scene);
+    pbr.reflectivityTexture = new BABYLON.Texture("000.jpg", scene);
     pbr.reflectivityColor = new BABYLON.Color3(1.0, 1.0, 1.0);
 
-    const glossinessMap = new BABYLON.Texture("/textures/000.jpg", scene);
+    const glossinessMap = new BABYLON.Texture("000.jpg", scene);
     pbr.microSurfaceTexture = glossinessMap;
     pbr.microSurface = 1.0;
 
