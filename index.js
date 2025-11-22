@@ -7,12 +7,13 @@ var createScene = function (engine, canvas) {
 
     camera.attachControl(canvas, true);
 
+    var light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene);
+
     var sphere = BABYLON.Mesh.CreateSphere("sphere1", 16, 3, scene);
 
     var pbr = new BABYLON.PBRSpecularGlossinessMaterial("pbr", scene);
     sphere.material = pbr;
 
-    var light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene);
 
     //const diffuseMap = new BABYLON.Texture("./test_diffuse.jpg", scene);
     //pbr.albedoTexture = diffuseMap;
